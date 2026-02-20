@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Maryan — Estética Avançada</title>
+  <meta name="description" content="Centro de saúde e beleza onde a excelência foca em devolver e melhorar a sua autoestima através de resultados naturais.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#inicio" class="logo">
+        <div class="logo__mark">M</div>
+        <div class="logo__wordmark">
+          <span class="logo__name">Clínica Maryan</span>
+          <span class="logo__sub">Estética Avançada</span>
+        </div>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#tratamentos" class="nav__link">Tratamentos</a>
+        <a href="#depoimentos" class="nav__link">Depoimentos</a>
+        <a href="https://wa.me/5511999491086" class="nav__cta" target="_blank" rel="noopener">Agendar →</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══ MOBILE MENU ══ -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#servicos" class="mobile-menu__link">Serviços</a>
+    <a href="#sobre" class="mobile-menu__link">Sobre</a>
+    <a href="#tratamentos" class="mobile-menu__link">Tratamentos</a>
+    <a href="#depoimentos" class="mobile-menu__link">Depoimentos</a>
+    <a href="https://wa.me/5511999491086" class="mobile-menu__cta" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+  </div>
+
+
+  <!-- ══ HERO (split) ══ -->
+  <section class="hero" id="inicio">
+    <div class="hero__image-side">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        poster="assets/hero-poster.jpg"
+        id="heroVideo"
+      >
+        <source src="assets/hero-web.webm" type="video/webm">
+        <source src="assets/hero-web.mp4" type="video/mp4">
+      </video>
+      <div class="hero__logo-overlay" aria-hidden="true">
+        <img src="assets/logo-svg.svg" alt="">
+      </div>
+      <div class="hero__caption">Resultados que transformam</div>
+    </div>
+
+    <div class="hero__content-side">
+      <div class="hero__body">
+        <span class="hero__eyebrow">Santo André, SP</span>
+        <h1 class="hero__title">
+          Sua beleza<br>
+          merece<br>
+          <em>excelência</em>
+        </h1>
+        <p class="hero__desc">
+          Centro de estética avançada onde excelência, segurança e autoestima se encontram para transformar a sua vida.
+        </p>
+        <div class="hero__actions">
+          <a href="https://wa.me/5511999491086" class="btn-primary" target="_blank" rel="noopener">Agendar avaliação</a>
+          <a href="#servicos" class="btn-ghost">Ver serviços</a>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-n">26+</span>
+          <span class="hero__stat-l">anos</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n">5</span>
+          <span class="hero__stat-l">pós-graduações</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-n">2.5k+</span>
+          <span class="hero__stat-l">pacientes</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#servicos" class="hero__scroll-arrow" aria-label="Próxima seção">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </section>
+
+
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Sofisticação</span><span class="dot">·</span>
+      <span>Resultados Naturais</span><span class="dot">·</span>
+      <span>Tecnologia Avançada</span><span class="dot">·</span>
+      <span>Segurança Clínica</span><span class="dot">·</span>
+      <span>Excelência</span><span class="dot">·</span>
+      <span>Autoestima</span><span class="dot">·</span>
+      <span>Bem-estar</span><span class="dot">·</span>
+      <span>Sofisticação</span><span class="dot">·</span>
+      <span>Resultados Naturais</span><span class="dot">·</span>
+      <span>Tecnologia Avançada</span><span class="dot">·</span>
+      <span>Segurança Clínica</span><span class="dot">·</span>
+      <span>Excelência</span><span class="dot">·</span>
+      <span>Autoestima</span><span class="dot">·</span>
+      <span>Bem-estar</span><span class="dot">·</span>
+    </div>
+  </div>
+
+
+  <!-- ══ SERVICES (image tiles) ══ -->
+  <section class="services" id="servicos">
+    <div class="services__header fade-in">
+      <span class="label">Nossos Serviços</span>
+      <h2>A experiência completa<br>em um só lugar</h2>
+    </div>
+
+    <div class="services__grid">
+      <a href="#tratamentos" class="tile fade-in" data-delay="0">
+        <div class="tile__img">
+          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=700&q=80" alt="Estética Facial" loading="lazy">
+        </div>
+        <div class="tile__overlay">
+          <span class="tile__num">01</span>
+          <h3 class="tile__title">Estética<br>Facial</h3>
+          <p class="tile__tags">Harmonização · Toxina · HIFU · Preenchimentos</p>
+        </div>
+      </a>
+
+      <a href="#tratamentos" class="tile fade-in" data-delay="100">
+        <div class="tile__img">
+          <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=700&q=80" alt="Estética Corporal" loading="lazy">
+        </div>
+        <div class="tile__overlay">
+          <span class="tile__num">02</span>
+          <h3 class="tile__title">Estética<br>Corporal</h3>
+          <p class="tile__tags">Ultrassom · Drenagem · Criofrequência</p>
+        </div>
+      </a>
+
+      <a href="#tratamentos" class="tile fade-in" data-delay="200">
+        <div class="tile__img">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" alt="Terapias" loading="lazy">
+        </div>
+        <div class="tile__overlay">
+          <span class="tile__num">03</span>
+          <h3 class="tile__title">Terapias &amp;<br>Bem-estar</h3>
+          <p class="tile__tags">Acupuntura · Reiki · Pedras Quentes</p>
+        </div>
+      </a>
+
+      <a href="#tratamentos" class="tile fade-in" data-delay="300">
+        <div class="tile__img">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=700&q=80" alt="Beleza Pessoal" loading="lazy">
+        </div>
+        <div class="tile__overlay">
+          <span class="tile__num">04</span>
+          <h3 class="tile__title">Cílios &amp;<br>Sobrancelhas</h3>
+          <p class="tile__tags">Micropigmentação · Lash Lifting · Brow</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- ══ ABOUT ══ -->
+  <section class="about" id="sobre">
+    <div class="about__text fade-in">
+      <span class="label">Sobre a Clínica</span>
+      <h2>Onde a excelência encontra o cuidado verdadeiro</h2>
+      <p>Aqui na Clínica Maryan temos os melhores e mais modernos tratamentos corporais e faciais, com profissionais capacitados e habilitados comprometidos com a sua saúde e autoestima.</p>
+      <div class="about__pills">
+        <span>Profissionais habilitados</span>
+        <span>Tecnologia de ponta</span>
+        <span>Resultados naturais</span>
+        <span>Atendimento humanizado</span>
+      </div>
+      <a href="https://wa.me/5511999491086" class="btn-primary" target="_blank" rel="noopener">Falar com a clínica</a>
+    </div>
+
+    <div class="about__gallery fade-in" data-delay="150">
+      <div class="about__gallery-main">
+        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=600&q=80" alt="Ambiente da clínica" loading="lazy">
+      </div>
+      <div class="about__gallery-side">
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=400&q=80" alt="Tratamento estético" loading="lazy">
+        <div class="about__badge">
+          <span class="about__badge-n">26+</span>
+          <span class="about__badge-l">anos de<br>experiência</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TECHNOLOGY (HIFU) ══ -->
+  <section class="technology">
+    <div class="technology__inner fade-in">
+      <div class="technology__text">
+        <span class="label label--light">Destaque</span>
+        <h2>HERUS<br>HIFU 4D</h2>
+        <p>A mais nova tecnologia de ultrassom micro e macrofocado — com artigo científico comprovado. Age de forma segura na gordura localizada e promove efeito lifting real.</p>
+        <ul class="technology__list">
+          <li>Lifting facial sem cirurgia</li>
+          <li>Redução de gordura localizada</li>
+          <li>Flacidez facial e corporal</li>
+          <li>Redefinição do contorno mandibular</li>
+        </ul>
+        <a href="https://wa.me/5511999491086?text=Quero+saber+sobre+o+HIFU+4D" class="btn-outline" target="_blank" rel="noopener">Quero saber mais →</a>
+      </div>
+
+      <div class="technology__visual">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=700&q=80" alt="Tecnologia HIFU 4D" loading="lazy">
+        <div class="technology__tag">Artigo científico<br>comprovado</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TREATMENTS (accordion) ══ -->
+  <section class="treatments" id="tratamentos">
+    <div class="treatments__header fade-in">
+      <span class="label">Procedimentos</span>
+      <h2>Todos os nossos<br>tratamentos</h2>
+    </div>
+
+    <div class="treatments__body">
+      <div class="accordion fade-in" id="accordion">
+
+        <div class="accordion__item active" data-img="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80">
+          <button class="accordion__trigger" aria-expanded="true">
+            <span class="accordion__num">01</span>
+            <span class="accordion__name">Estética Facial</span>
+            <span class="accordion__icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion__panel">
+            <ul class="accordion__list">
+              <li>Toxina Botulínica</li>
+              <li>Preenchimento (mandíbula, malar, labial, olheiras)</li>
+              <li>Harmonização Facial</li>
+              <li>HIFU 4D — Ultrassom Micro e Macrofocado</li>
+              <li>Fios de PDO</li>
+              <li>Bioestimuladores (Sculptra, Radiesse)</li>
+              <li>Skinbooster</li>
+              <li>Microagulhamento</li>
+              <li>Limpeza de Pele</li>
+              <li>Radiofrequência</li>
+              <li>Lipo de Papada Enzimática</li>
+              <li>Jato de Plasma</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion__item" data-img="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span class="accordion__num">02</span>
+            <span class="accordion__name">Estética Corporal</span>
+            <span class="accordion__icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion__panel">
+            <ul class="accordion__list">
+              <li>Ultrassom Macrofocado</li>
+              <li>Drenagem Linfática</li>
+              <li>Massagem Modeladora</li>
+              <li>Bambuterapia</li>
+              <li>HECCUS</li>
+              <li>Carboxiterapia</li>
+              <li>Criofrequência</li>
+              <li>Pump Up</li>
+              <li>Corrente Russa</li>
+              <li>Enzimas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion__item" data-img="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span class="accordion__num">03</span>
+            <span class="accordion__name">Terapias</span>
+            <span class="accordion__icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion__panel">
+            <ul class="accordion__list">
+              <li>Acupuntura</li>
+              <li>Massagem Relaxante</li>
+              <li>Reiki</li>
+              <li>Massagem com Pedras Quentes</li>
+              <li>Hipnose</li>
+              <li>Ozonioterapia</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion__item" data-img="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80">
+          <button class="accordion__trigger" aria-expanded="false">
+            <span class="accordion__num">04</span>
+            <span class="accordion__name">Cílios, Sobrancelhas &amp; Unhas</span>
+            <span class="accordion__icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </span>
+          </button>
+          <div class="accordion__panel">
+            <ul class="accordion__list">
+              <li>Manicure</li>
+              <li>Micropigmentação de Sobrancelhas</li>
+              <li>Microblading</li>
+              <li>Lash Lifting</li>
+              <li>Alongamento Fio a Fio</li>
+              <li>Brow Lamination</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="treatments__visual fade-in" data-delay="150">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" alt="Tratamentos estéticos" loading="lazy" id="treatmentsImg">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ STATS ══ -->
+  <section class="stats">
+    <div class="stats__inner">
+      <div class="stat fade-in" data-delay="0">
+        <span class="stat__n" data-target="26">0</span><span class="stat__unit">+</span>
+        <span class="stat__l">anos de experiência</span>
+      </div>
+      <div class="stat fade-in" data-delay="100">
+        <span class="stat__n" data-target="5">0</span><span class="stat__unit"></span>
+        <span class="stat__l">pós-graduações</span>
+      </div>
+      <div class="stat fade-in" data-delay="200">
+        <span class="stat__n" data-target="2500">0</span><span class="stat__unit">+</span>
+        <span class="stat__l">pacientes atendidos</span>
+      </div>
+      <div class="stat fade-in" data-delay="300">
+        <span class="stat__n" data-target="20">0</span><span class="stat__unit">+</span>
+        <span class="stat__l">tratamentos disponíveis</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ TESTIMONIALS ══ -->
+  <section class="testimonials" id="depoimentos">
+    <div class="testimonials__bg">
+      <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=1400&q=80" alt="" aria-hidden="true" loading="lazy">
+    </div>
+
+    <div class="testimonials__inner">
+      <div class="testimonials__header fade-in">
+        <span class="label label--light">Depoimentos</span>
+        <h2>O que dizem<br>nossas pacientes</h2>
+      </div>
+
+      <div class="testimonials__carousel fade-in" id="carousel" data-delay="150">
+        <div class="testimonial active">
+          <blockquote>
+            "Sem dúvidas o melhor lugar para relaxar. A Andréa tem mãos de fada, abençoadas! Toda sessão saio revigorada e novinha em folha. Estou amando o tratamento!"
+          </blockquote>
+          <cite>— Evellyn Santos</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            "Excelente estrutura, equipamentos, métodos e profissionais comprometidos com a saúde e bem-estar. Obtive resultados muito satisfatórios em pouquíssimo tempo."
+          </blockquote>
+          <cite>— Valdeci Almeida</cite>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            "O alto astral, boa energia e simpatia de todas as profissionais são de fato um diferencial dessa clínica. Super recomendo!"
+          </blockquote>
+          <cite>— Andrea Denadai</cite>
+        </div>
+      </div>
+
+      <div class="testimonials__controls fade-in" data-delay="200">
+        <button class="tc-btn" id="prevBtn" aria-label="Depoimento anterior">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        </button>
+        <div class="tc-dots" id="tcDots">
+          <button class="tc-dot active" data-index="0" aria-label="Depoimento 1"></button>
+          <button class="tc-dot" data-index="1" aria-label="Depoimento 2"></button>
+          <button class="tc-dot" data-index="2" aria-label="Depoimento 3"></button>
+        </div>
+        <button class="tc-btn" id="nextBtn" aria-label="Próximo depoimento">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ DOCTOR ══ -->
+  <section class="doctor">
+    <div class="doctor__image fade-in">
+      <img src="assets/image.png" alt="Dra. Andrea Françoso" loading="lazy">
+    </div>
+    <div class="doctor__content fade-in" data-delay="150">
+      <span class="label">Conheça</span>
+      <h2>Dra. Andrea<br>Françoso</h2>
+      <div class="doctor__rule"></div>
+      <p>Proprietária da Clínica Maryan, com 26 anos de atuação na área de saúde e estética. Profissional dedicada e apaixonada por transformar vidas através do cuidado com a beleza e bem-estar.</p>
+      <p class="doctor__meta">5 pós-graduações &nbsp;·&nbsp; 26 anos de experiência &nbsp;·&nbsp; +2.500 pacientes</p>
+      <a href="https://wa.me/5511999491086?text=Gostaria+de+agendar+uma+avalia%C3%A7%C3%A3o" class="btn-primary" target="_blank" rel="noopener">Agendar avaliação</a>
+    </div>
+  </section>
+
+
+  <!-- ══ CTA ══ -->
+  <section class="cta-section">
+    <div class="cta-section__inner fade-in">
+      <span class="label label--rose">Próximo passo</span>
+      <h2>Pronta para se sentir<br><em>ainda mais bonita?</em></h2>
+      <p>Agende sua avaliação gratuita. Estamos prontas para te receber.</p>
+      <div class="cta-section__btns">
+        <a href="https://wa.me/5511999491086" class="btn-wa" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a href="tel:1143165469" class="btn-ghost-dark">(11) 4316-5469</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__name">Clínica Maryan</span>
+        <span class="footer__sub">Estética Avançada</span>
+        <p class="footer__addr">Rua José Bonifácio, 62<br>Vila Assunção — Santo André, SP</p>
+        <div class="footer__social">
+          <a href="https://www.instagram.com/clinicamaryan" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+          </a>
+          <a href="https://wa.me/5511999491086" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#depoimentos">Depoimentos</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <a href="tel:1143165469">(11) 4316-5469</a>
+        <a href="https://wa.me/5511999491086" target="_blank" rel="noopener">(11) 99949-1086</a>
+        <a href="mailto:maryanesteticaeacupuntura@gmail.com">maryanesteticaeacupuntura@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Clínica Maryan. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ══ WHATSAPP FLOAT ══ -->
+  <a href="https://wa.me/5511999491086" class="wa-float" target="_blank" rel="noopener" aria-label="Contato via WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
